@@ -24,6 +24,9 @@ jobs:
           test -f public/support.html
           test -f public/about.html
           test -f public/privacy.html
+          test -f public/references.html
           test -f public/404.html
           grep -q "SyriaInsight" public/index.html
           grep -q "Not legal advice" public/index.html
+          grep -q "Not a CRA-registered charity" public/about.html
+          grep -q "PIPEDA" public/privacy.html

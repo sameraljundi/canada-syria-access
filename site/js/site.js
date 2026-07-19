@@ -40,7 +40,7 @@
         level = "likely-restricted";
         title = "Likely restricted / high sensitivity";
         body =
-          "Dealings involving listed persons or entities under the Special Economic Measures (Syria) Regulations remain prohibited unless an exception or permit applies. Verify the current Consolidated Canadian Autonomous Sanctions List before proceeding.";
+          "Dealings involving listed persons or entities under the Special Economic Measures (Syria) Regulations remain prohibited unless an exception or permit applies. Verify current official Canadian sanctions resources (GAC Syria page and SOR/2011-114) before proceeding.";
       } else if (issue === "chemicals" || (cross === "yes" && issue === "banking")) {
         level = "needs-review";
         title = "Needs careful multi-jurisdiction review";
@@ -62,7 +62,7 @@
         title +
         "</strong><p class=\"small\" style=\"margin:8px 0 0\">" +
         body +
-        '</p><p class="small" style="margin:10px 0 0">This is screening guidance only — not legal advice. Check: <a href="https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/syria-syrie.aspx?lang=eng" target="_blank" rel="noopener">GAC Syria sanctions</a> · <a href="https://laws.justice.gc.ca/eng/regulations/SOR-2011-114/index.html" target="_blank" rel="noopener">Justice Laws regulations</a> · <a href="/support.html">Request support</a></p>';
+        '</p><p class="small" style="margin:10px 0 0">This is screening guidance only — not legal advice. Check: <a href="https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/syria-syrie.aspx?lang=eng" target="_blank" rel="noopener noreferrer">GAC Syria sanctions</a> · <a href="https://laws.justice.gc.ca/eng/regulations/SOR-2011-114/index.html" target="_blank" rel="noopener noreferrer">Justice Laws regulations</a> · <a href="/references.html">References</a> · <a href="/support.html">Request support</a></p>';
     });
   }
 
