@@ -1,0 +1,17 @@
+# Dependencies / build
+node_modules/
+.vercel/
+public/
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+*.textClipping
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+.vercel

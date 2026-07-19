@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Request triage support from SyriaInsight — Canada–Syria sanctions and economic access."/>
+  <title>Request Support — SyriaInsight.ca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/css/styles.css"/>
+</head>
+<body>
+  <div class="disclaimer-bar"><div class="wrap"><strong>Not legal advice.</strong> Public research and decision-support only. Verify against official Government of Canada sources and consult qualified counsel for transactions.</div></div>
+  <header>
+    <div class="wrap top">
+      <a class="brand" href="/">
+        <div class="logo" aria-hidden="true">SI</div>
+        <div>
+          <div class="brand-name">SyriaInsight</div>
+          <div class="meta">Canada–Syria Sanctions &amp; Economic Access</div>
+        </div>
+      </a>
+      <nav aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/sanctions.html">Sanctions</a>
+        <a href="/sectors.html">Sectors</a>
+        <a href="/tools.html">Tools</a>
+        <a href="/figures.html">Figures</a>
+        <a href="/support.html" aria-current="page">Support</a>
+        <a href="/about.html">About</a>
+      </nav>
+      <button type="button" class="toggle" id="themeBtn" aria-label="Toggle colour theme">Light</button>
+    </div>
+  </header>
+
+  <main class="wrap page-hero">
+    <section class="hero">
+      <p class="eyebrow">Request support</p>
+      <h1>Intake for case triage</h1>
+      <p class="lead">Tell us who you are, what you are trying to do, and which jurisdictions are involved. We use this to package missing facts and source links — not to provide formal legal opinions.</p>
+    </section>
+
+    <div class="grid-2">
+      <form class="panel form" id="supportForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="hidden" name="_subject" value="SyriaInsight support request"/>
+        <label class="field">Email
+          <input class="input" type="email" name="email" required placeholder="you@organization.ca"/>
+        </label>
+        <label class="field">Segment
+          <select name="segment" required>
+            <option value="ngo">NGO / charity</option>
+            <option value="private">Private sector / investor</option>
+            <option value="bank">Bank / financial institution</option>
+            <option value="legal">Legal / advisory</option>
+            <option value="policy">Policy / public institution</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label class="field">Issue type
+          <select name="issue" required>
+            <option value="banking">Banking / payments</option>
+            <option value="licensing">Licensing / registration</option>
+            <option value="trade">Export / import / investment</option>
+            <option value="donor">Donor compliance</option>
+            <option value="screening">Sanctions screening</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label class="field">Jurisdictions involved
+          <input class="input" type="text" name="jurisdictions" required placeholder="e.g. Canada, Syria, UAE, EU"/>
+        </label>
+        <label class="field">Short description
+          <textarea name="description" required placeholder="What are you trying to do? What is blocked today?"></textarea>
+        </label>
+        <label class="check">
+          <input type="checkbox" name="privacy_ack" required/>
+          <span>I understand this is not legal advice and I have read the <a href="/privacy.html">Privacy notice</a>.</span>
+        </label>
+        <label class="check">
+          <input type="checkbox" name="research_consent" value="yes"/>
+          <span>Optional: I consent to anonymized insights from this request being used for research or advocacy. Declining does not affect support.</span>
+        </label>
+        <button type="submit" class="btn primary">Submit request</button>
+        <p class="small" id="formNote" hidden></p>
+        <p class="small">Replace <code>YOUR_FORM_ID</code> in this form’s action with your Formspree (or similar) endpoint for web delivery. Until then, submit opens a mailto to <a href="mailto:hello@syriainsight.ca">hello@syriainsight.ca</a>.</p>
+      </form>
+
+      <div class="panel">
+        <h3>What happens next</h3>
+        <ol class="small">
+          <li>We classify by segment and issue type.</li>
+          <li>We identify missing facts and relevant official sources.</li>
+          <li>We reply with a triage note or escalate to counsel when needed.</li>
+        </ol>
+        <h3 style="margin-top:20px">Response expectations</h3>
+        <p class="small">Launch phase: best-effort within several business days. Priority enterprise triage is not yet a paid product.</p>
+        <h3 style="margin-top:20px">Do not send</h3>
+        <p class="small">Passwords, full identity documents, or classified material. Share only what is needed for triage.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">SyriaInsight.ca</div>
+          <p class="small">Canada-facing research on Syria sanctions easing, residual compliance risk, and economic access.</p>
+        </div>
+        <div class="footer-links">
+          <strong style="color:var(--text)">Explore</strong>
+          <a href="/sanctions.html">Sanctions landscape</a>
+          <a href="/tools.html">Decision assistant</a>
+          <a href="/figures.html">Syria in Figures</a>
+          <a href="/support.html">Request support</a>
+        </div>
+        <div class="footer-links">
+          <strong style="color:var(--text)">Trust</strong>
+          <a href="/about.html">Methodology</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/privacy.html#consent">Consent &amp; data use</a>
+        </div>
+      </div>
+      <div class="footer-legal">
+        SyriaInsight provides informational guidance only and does not create a lawyer–client relationship.
+        Content last reviewed for launch: <time datetime="2026-07-19">19 July 2026</time>.
+      </div>
+    </div>
+  </footer>
+  <script src="/js/site.js"></script>
+</body>
+</html>

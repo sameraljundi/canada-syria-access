@@ -1,0 +1,29 @@
+name: Build static site
+
+on:
+  pull_request:
+  push:
+    branches: [main, develop]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Build
+        run: npm run build
+      - name: Verify launch pages
+        run: |
+          test -f public/index.html
+          test -f public/sanctions.html
+          test -f public/tools.html
+          test -f public/figures.html
+          test -f public/support.html
+          test -f public/about.html
+          test -f public/privacy.html
+          test -f public/404.html
+          grep -q "SyriaInsight" public/index.html
+          grep -q "Not legal advice" public/index.html

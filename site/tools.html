@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Rule-based Syria activity screening for Canadian users — not legal advice."/>
+  <title>Tools &amp; Guides — SyriaInsight.ca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/css/styles.css"/>
+</head>
+<body>
+  <div class="disclaimer-bar"><div class="wrap"><strong>Not legal advice.</strong> Public research and decision-support only. Verify against official Government of Canada sources and consult qualified counsel for transactions.</div></div>
+  <header>
+    <div class="wrap top">
+      <a class="brand" href="/">
+        <div class="logo" aria-hidden="true">SI</div>
+        <div>
+          <div class="brand-name">SyriaInsight</div>
+          <div class="meta">Canada–Syria Sanctions &amp; Economic Access</div>
+        </div>
+      </a>
+      <nav aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/sanctions.html">Sanctions</a>
+        <a href="/sectors.html">Sectors</a>
+        <a href="/tools.html" aria-current="page">Tools</a>
+        <a href="/figures.html">Figures</a>
+        <a href="/support.html">Support</a>
+        <a href="/about.html">About</a>
+      </nav>
+      <button type="button" class="toggle" id="themeBtn" aria-label="Toggle colour theme">Light</button>
+    </div>
+  </header>
+
+  <main class="wrap page-hero">
+    <section class="hero">
+      <p class="eyebrow">Tools &amp; guides</p>
+      <h1>Screen first. Then verify with official sources.</h1>
+      <p class="lead">A lightweight rule tree that routes common Canada–Syria scenarios to “likely within eased rules,” “needs review,” or “likely restricted.” It does not clear a transaction.</p>
+    </section>
+
+    <div class="callout risk">
+      <strong>Hard limit:</strong> This tool never authorizes a payment, export, investment, or partnership. Always screen against the current Consolidated Canadian Autonomous Sanctions List and seek counsel for material decisions.
+    </div>
+
+    <section class="grid-2">
+      <div class="panel">
+        <h3>Can I do this?</h3>
+        <form class="form" id="decisionForm">
+          <label class="field">Your segment
+            <select name="segment" required>
+              <option value="investor">Investor / business</option>
+              <option value="bank">Bank / compliance</option>
+              <option value="ngo">NGO / charity / donor</option>
+              <option value="other">Other / advisory</option>
+            </select>
+          </label>
+          <label class="field">Issue type
+            <select name="issue" required>
+              <option value="banking">Banking / payments</option>
+              <option value="trade">Trade / investment / services</option>
+              <option value="humanitarian">Humanitarian / early recovery</option>
+              <option value="chemicals">Chemicals / controlled goods</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label class="field">Does the activity involve a person or entity you believe may be listed?
+            <select name="listed" required>
+              <option value="no">No / unknown — will verify</option>
+              <option value="yes">Yes — known or suspected listing</option>
+            </select>
+          </label>
+          <label class="field">Does the activity touch US, EU, or UK rules or counterparties?
+            <select name="cross" required>
+              <option value="no">Primarily Canada only</option>
+              <option value="yes">Yes — cross-jurisdiction</option>
+            </select>
+          </label>
+          <label class="field">Short description (optional)
+            <textarea name="notes" placeholder="Describe the activity in plain language"></textarea>
+          </label>
+          <button type="submit" class="btn primary">Run screening</button>
+        </form>
+        <div id="decisionResult" class="result-box" role="status" aria-live="polite"></div>
+      </div>
+
+      <div class="panel">
+        <h3>Core checklists</h3>
+        <ul class="small">
+          <li><strong>Banking &amp; payments:</strong> counterparty identity, ownership/control, payment route, purpose of funds, sanctions list hit/no-hit record.</li>
+          <li><strong>NGO / donor:</strong> beneficiary screening, implementing partner diligence, grant terms, reporting trail, humanitarian guidance alignment.</li>
+          <li><strong>Trade / investment:</strong> goods classification (watch chemical exceptions), end-use, end-user, banking path, insurance.</li>
+        </ul>
+        <h3 style="margin-top:20px">Official links</h3>
+        <ul class="small">
+          <li><a href="https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/syria-syrie.aspx?lang=eng" target="_blank" rel="noopener">GAC — Syria sanctions</a></li>
+          <li><a href="https://laws.justice.gc.ca/eng/regulations/SOR-2011-114/index.html" target="_blank" rel="noopener">Justice Laws — Syria Regulations</a></li>
+          <li><a href="https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/guidance-directives.aspx?lang=eng" target="_blank" rel="noopener">GAC — Sanctions guidance</a></li>
+        </ul>
+        <p class="small coming" style="margin-top:16px">Document pack &amp; risk-score explainer: next sprint.</p>
+        <p style="margin-top:16px"><a class="btn" href="/support.html">Escalate to support intake</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">SyriaInsight.ca</div>
+          <p class="small">Canada-facing research on Syria sanctions easing, residual compliance risk, and economic access.</p>
+        </div>
+        <div class="footer-links">
+          <strong style="color:var(--text)">Explore</strong>
+          <a href="/sanctions.html">Sanctions landscape</a>
+          <a href="/tools.html">Decision assistant</a>
+          <a href="/figures.html">Syria in Figures</a>
+          <a href="/support.html">Request support</a>
+        </div>
+        <div class="footer-links">
+          <strong style="color:var(--text)">Trust</strong>
+          <a href="/about.html">Methodology</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/privacy.html#consent">Consent &amp; data use</a>
+        </div>
+      </div>
+      <div class="footer-legal">
+        SyriaInsight provides informational guidance only and does not create a lawyer–client relationship.
+        Content last reviewed for launch: <time datetime="2026-07-19">19 July 2026</time>.
+      </div>
+    </div>
+  </footer>
+  <script src="/js/site.js"></script>
+</body>
+</html>

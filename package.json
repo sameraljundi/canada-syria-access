@@ -1,0 +1,9 @@
+{
+  "name": "syriainsight",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 8080 --directory site",
+    "build": "rm -rf public && mkdir public && cp -R site/. public/ && rm -f public/js/_chrome.py public/vercel.json",
+    "start": "python3 -m http.server 8080 --directory public"
+  }
+}
