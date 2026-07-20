@@ -54,10 +54,22 @@
         <form class="form" id="decisionForm">
           <label class="field">Your segment
             <select name="segment" required>
-              <option value="investor">Investor / business</option>
-              <option value="bank">Bank / compliance</option>
+              <option value="investor">Private sector / investor</option>
+              <option value="bank">Bank / financial institution</option>
               <option value="ngo">NGO / charity / donor</option>
-              <option value="other">Other / advisory</option>
+              <option value="legal">Legal / advisory</option>
+              <option value="policy">Policy / public institution</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label class="field">Economic sector
+            <select name="sector" required>
+              <option value="banking">Banking &amp; payments</option>
+              <option value="energy">Energy (oil, gas, electricity)</option>
+              <option value="telecom">Telecom &amp; technology</option>
+              <option value="real-estate">Real estate</option>
+              <option value="humanitarian">Humanitarian / early recovery</option>
+              <option value="cross-cutting">Cross-cutting / other</option>
             </select>
           </label>
           <label class="field">Issue type
@@ -92,10 +104,14 @@
       <div class="panel">
         <h3>Core checklists</h3>
         <ul class="small">
-          <li><strong>Banking &amp; payments:</strong> counterparty identity, ownership/control, payment route, purpose of funds, sanctions list hit/no-hit record.</li>
+          <li><strong>Banking &amp; payments:</strong> counterparty identity, ownership/control, payment route, purpose of funds, sanctions list hit/no-hit record. <a href="/sectors/banking.html">Sector brief</a></li>
+          <li><strong>Energy:</strong> screen counterparties and beneficial owners; check controlled-goods / chemicals where relevant; map payment and insurance paths. <a href="/sectors/energy.html">Sector brief</a></li>
+          <li><strong>Telecom &amp; technology:</strong> operator/vendor/end-user screening; dual-use and licensing questions; cross-border payment rails. <a href="/sectors/telecom.html">Sector brief</a></li>
+          <li><strong>Real estate:</strong> ownership chain and documentation; listed-person risk; payment path for fees, materials, or equity. <a href="/sectors/real-estate.html">Sector brief</a></li>
           <li><strong>NGO / donor:</strong> beneficiary screening, implementing partner diligence, grant terms, reporting trail, humanitarian guidance alignment.</li>
           <li><strong>Trade / investment:</strong> goods classification (watch chemical exceptions), end-use, end-user, banking path, insurance.</li>
         </ul>
+        <p class="small" style="margin-top:12px"><a href="/sectors.html">All sector briefs</a></p>
         <h3 style="margin-top:20px">Official links</h3>
         <ul class="small">
           <li><a href="https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/syria-syrie.aspx?lang=eng" target="_blank" rel="noopener">GAC — Syria sanctions</a></li>

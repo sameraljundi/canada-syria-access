@@ -48,6 +48,7 @@ flowchart TD
 - [ ] Decision assistant still rule-based; no generative “you may proceed” as legal clearance
 - [ ] **Sector pages** (`site/sectors/*.html`): Canada / GAC block first; Investor Guide material is short paraphrase + attribution only — see [`SOURCE_LICENSING.md`](SOURCE_LICENSING.md). Do **not** host or link to local guide PDFs on the public site; embassy business URL may be linked as a target.
 - [ ] Hub [`site/sectors.html`](../site/sectors.html) links remain valid for banking, energy, telecom, real-estate
+- [ ] When public copy or sources change: append an entry to [`CONTENT_CHANGELOG.md`](CONTENT_CHANGELOG.md) (newest first) and mirror it on [`site/changelog.html`](../site/changelog.html); bump “last reviewed” on touched pages
 
 ## 3. NPO / privacy (Canadian public-interest posture)
 

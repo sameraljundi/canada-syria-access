@@ -38,6 +38,7 @@ Official sources → AI draft summary → Human review → Commit → Preview �
 1. Weekly pass on the top sources in the monitoring checklist / [`monitoring.csv`](../monitoring.csv).
 2. Paste notes into PR description with source URLs.
 3. Update HTML pages; never invent list counts.
+4. Record material content changes in [`CONTENT_CHANGELOG.md`](CONTENT_CHANGELOG.md) and mirror on [`site/changelog.html`](../site/changelog.html) (log of record).
 
 ### Next (Week 1–2)
 

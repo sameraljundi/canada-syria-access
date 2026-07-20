@@ -25,6 +25,7 @@
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       const segment = form.segment.value;
+      const sector = form.sector ? form.sector.value : "";
       const issue = form.issue.value;
       const listed = form.listed.value;
       const cross = form.cross.value;
@@ -56,13 +57,32 @@
           "Broad Canadian sectoral prohibitions were repealed in February 2026, but targeted listings, AML/CTF controls, and bank internal policies still apply. Confirm counterparties against official lists and document the transaction trail.";
       }
 
+      const sectorBriefs = {
+        banking: { href: "/sectors/banking.html", label: "Banking & payments brief" },
+        energy: { href: "/sectors/energy.html", label: "Energy brief" },
+        telecom: { href: "/sectors/telecom.html", label: "Telecom & technology brief" },
+        "real-estate": { href: "/sectors/real-estate.html", label: "Real estate brief" },
+        humanitarian: { href: "/support.html", label: "Support intake (humanitarian / early recovery)" },
+        "cross-cutting": { href: "/sectors.html", label: "Sectors overview" },
+      };
+      const brief = sectorBriefs[sector];
+      const sectorLine = brief
+        ? '<p class="small" style="margin:10px 0 0">Related sector brief: <a href="' +
+          brief.href +
+          '">' +
+          brief.label +
+          "</a> (context only — not clearance).</p>"
+        : "";
+
       out.className = "result-box visible callout " + (level === "likely-allowed" ? "ok" : level === "likely-restricted" ? "risk" : "");
       out.innerHTML =
         "<strong>" +
         title +
         "</strong><p class=\"small\" style=\"margin:8px 0 0\">" +
         body +
-        '</p><p class="small" style="margin:10px 0 0">This is screening guidance only — not legal advice. Check: <a href="https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/syria-syrie.aspx?lang=eng" target="_blank" rel="noopener noreferrer">GAC Syria sanctions</a> · <a href="https://laws.justice.gc.ca/eng/regulations/SOR-2011-114/index.html" target="_blank" rel="noopener noreferrer">Justice Laws regulations</a> · <a href="/references.html">References</a> · <a href="/support.html">Request support</a></p>';
+        "</p>" +
+        sectorLine +
+        '<p class="small" style="margin:10px 0 0">This is screening guidance only — not legal advice. Check: <a href="https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/syria-syrie.aspx?lang=eng" target="_blank" rel="noopener noreferrer">GAC Syria sanctions</a> · <a href="https://laws.justice.gc.ca/eng/regulations/SOR-2011-114/index.html" target="_blank" rel="noopener noreferrer">Justice Laws regulations</a> · <a href="/references.html">References</a> · <a href="/support.html">Request support</a></p>';
     });
   }
 
@@ -77,6 +97,7 @@
       const lines = [
         "SyriaInsight support request",
         "Segment: " + data.get("segment"),
+        "Sector: " + data.get("sector"),
         "Issue: " + data.get("issue"),
         "Jurisdictions: " + data.get("jurisdictions"),
         "Research consent: " + (data.get("research_consent") ? "Yes" : "No"),

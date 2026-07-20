@@ -25,6 +25,7 @@ jobs:
           test -f public/about.html
           test -f public/privacy.html
           test -f public/references.html
+          test -f public/changelog.html
           test -f public/sectors.html
           test -f public/sectors/banking.html
           test -f public/sectors/energy.html
@@ -39,7 +40,7 @@ jobs:
         run: |
           set -e
           # Disclaimer on key public pages
-          for f in index.html sanctions.html tools.html figures.html support.html about.html privacy.html sectors.html references.html \
+          for f in index.html sanctions.html tools.html figures.html support.html about.html privacy.html sectors.html references.html changelog.html \
             sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html; do
             grep -q "Not legal advice" "public/$f"
           done
@@ -55,6 +56,17 @@ jobs:
           grep -q 'href="/references.html"' public/index.html
           grep -q 'id="secondary-us"' public/references.html
           grep -q 'sy.usembassy.gov/business' public/references.html
+          # Changelog present and linked
+          test -f public/changelog.html
+          grep -q 'href="/changelog.html"' public/about.html
+          grep -q 'href="/changelog.html"' public/references.html
+          grep -q "Content change log" public/changelog.html
+          # Tools / Support: shared economic sector field
+          grep -q 'name="sector"' public/tools.html
+          grep -q 'name="sector"' public/support.html
+          grep -q 'value="energy"' public/tools.html
+          grep -q 'value="real-estate"' public/support.html
+          grep -q 'value="investor"' public/support.html
           # Sector hub links to briefs
           grep -q 'href="/sectors/banking.html"' public/sectors.html
           grep -q 'href="/sectors/energy.html"' public/sectors.html

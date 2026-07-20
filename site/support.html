@@ -49,12 +49,22 @@
         </label>
         <label class="field">Segment
           <select name="segment" required>
-            <option value="ngo">NGO / charity</option>
-            <option value="private">Private sector / investor</option>
+            <option value="investor">Private sector / investor</option>
             <option value="bank">Bank / financial institution</option>
+            <option value="ngo">NGO / charity / donor</option>
             <option value="legal">Legal / advisory</option>
             <option value="policy">Policy / public institution</option>
             <option value="other">Other</option>
+          </select>
+        </label>
+        <label class="field">Economic sector
+          <select name="sector" required>
+            <option value="banking">Banking &amp; payments</option>
+            <option value="energy">Energy (oil, gas, electricity)</option>
+            <option value="telecom">Telecom &amp; technology</option>
+            <option value="real-estate">Real estate</option>
+            <option value="humanitarian">Humanitarian / early recovery</option>
+            <option value="cross-cutting">Cross-cutting / other</option>
           </select>
         </label>
         <label class="field">Issue type
@@ -89,7 +99,7 @@
       <div class="panel">
         <h3>What happens next</h3>
         <ol class="small">
-          <li>We classify by segment and issue type.</li>
+          <li>We classify by segment, economic sector, and issue type.</li>
           <li>We identify missing facts and relevant official sources.</li>
           <li>We reply with an informational triage note, or suggest that you retain independent counsel when needed.</li>
         </ol>

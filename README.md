@@ -43,6 +43,7 @@ npm run dev
 - Privacy notice (PIPEDA fair-information practices)
 - KPIs linked to Global Affairs Canada / Justice Laws primary sources
 - Pre-push gate: [`docs/PRE_PUSH_GATE.md`](docs/PRE_PUSH_GATE.md)
+- Content change log: [`docs/CONTENT_CHANGELOG.md`](docs/CONTENT_CHANGELOG.md) (public: [`site/changelog.html`](site/changelog.html))
 - Source licensing (State/embassy text vs Investor Guides): [`docs/SOURCE_LICENSING.md`](docs/SOURCE_LICENSING.md)
 - Pipelines: [`docs/CONTENT_PIPELINE.md`](docs/CONTENT_PIPELINE.md), [`docs/MONITORING_CHECKLIST.md`](docs/MONITORING_CHECKLIST.md), [`docs/DEPLOY.md`](docs/DEPLOY.md)
 
