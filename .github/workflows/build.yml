@@ -25,8 +25,58 @@ jobs:
           test -f public/about.html
           test -f public/privacy.html
           test -f public/references.html
+          test -f public/sectors.html
+          test -f public/sectors/banking.html
+          test -f public/sectors/energy.html
+          test -f public/sectors/telecom.html
+          test -f public/sectors/real-estate.html
           test -f public/404.html
           grep -q "SyriaInsight" public/index.html
           grep -q "Not legal advice" public/index.html
           grep -q "Not a CRA-registered charity" public/about.html
           grep -q "PIPEDA" public/privacy.html
+      - name: Pre-push gate — compliance smoke checks
+        run: |
+          set -e
+          # Disclaimer on key public pages
+          for f in index.html sanctions.html tools.html figures.html support.html about.html privacy.html sectors.html references.html \
+            sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html; do
+            grep -q "Not legal advice" "public/$f"
+          done
+          # NPO / charity posture
+          grep -q "Not a CRA-registered charity" public/about.html
+          grep -q "Not a CRA-registered charity" public/index.html
+          # Privacy / OPC
+          grep -q "PIPEDA" public/privacy.html
+          grep -q "priv.gc.ca" public/privacy.html
+          # References present and linked
+          test -f public/references.html
+          grep -q 'href="/references.html"' public/about.html
+          grep -q 'href="/references.html"' public/index.html
+          grep -q 'id="secondary-us"' public/references.html
+          grep -q 'sy.usembassy.gov/business' public/references.html
+          # Sector hub links to briefs
+          grep -q 'href="/sectors/banking.html"' public/sectors.html
+          grep -q 'href="/sectors/energy.html"' public/sectors.html
+          grep -q 'href="/sectors/telecom.html"' public/sectors.html
+          grep -q 'href="/sectors/real-estate.html"' public/sectors.html
+          # Sector pages: Canada primary + secondary attribution; no PDF hosting
+          for f in sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html; do
+            grep -q "international.gc.ca" "public/$f"
+            grep -q "Doing Business in Syria" "public/$f"
+            grep -q "Not legal advice" "public/$f"
+          done
+          if find public -iname '*.pdf' | grep -q .; then
+            echo "FAIL: PDF found under public/ — Investor Guides must not be republished on the site"
+            exit 1
+          fi
+          # No public developer instruction to replace Formspree ID
+          if grep -Eiq 'Replace.*(YOUR_FORM_ID|Formspree)' public/support.html; then
+            echo "FAIL: developer Formspree instruction found in public support page"
+            exit 1
+          fi
+          # Primary source anchors still present on sanctions / figures
+          grep -q "international.gc.ca" public/sanctions.html
+          grep -q "laws.justice.gc.ca" public/sanctions.html
+          grep -q "canada.ca/en/global-affairs" public/figures.html
+          echo "Pre-push gate smoke checks passed"

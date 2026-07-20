@@ -12,9 +12,20 @@ main       →  Vercel Production (syriainsight.ca)
 2. Edit files under `site/` (or later `content/` MDX).
 3. Open a PR — Vercel posts a **Preview URL** (staging).
 4. Run [`MONITORING_CHECKLIST.md`](MONITORING_CHECKLIST.md) if legal/figures changed.
-5. Approve and merge to `main` → Production.
+5. Complete the **[Pre-push review gate](PRE_PUSH_GATE.md)** (proofreader + researcher + NPO/privacy). Paste `Pre-push gate: done` in the PR.
+6. Approve and merge to `main` → Production (only after CI green + gate done).
 
 Local **Development:** `npm run dev` (serves `site/` on port 8080).
+
+## Pre-push gate (mandatory)
+
+Before every production push, complete [`PRE_PUSH_GATE.md`](PRE_PUSH_GATE.md). That document is the pipeline step for:
+
+- Proofreading (en-CA, no developer notes, disclaimer, dates)
+- Research citations (primary GoC sources, references page, monitoring checklist when needed)
+- Canadian NPO / privacy posture (no false charity claims, PIPEDA practices, triage framing)
+
+CI automates smoke greps; humans complete the qualitative checklist.
 
 ## Content pipeline (semi-autonomous)
 
@@ -39,6 +50,7 @@ Official sources → AI draft summary → Human review → Commit → Preview �
 - Every material claim links to GAC / Justice Laws / Canada Gazette when it is a legal fact.
 - Decision assistant stays rule-based; no generative “you may proceed” answers in production without counsel.
 - Intake PII stays out of git; Formspree/email only.
+- Sector briefs: Canadian sources first; paraphrase State-funded Investor Guides only — see [`SOURCE_LICENSING.md`](SOURCE_LICENSING.md). Never publish guide PDFs under `site/` / `public/`.
 
 ## Coding pipeline
 
@@ -52,7 +64,7 @@ Official sources → AI draft summary → Human review → Commit → Preview �
 |---|---|
 | 1–2 | DNS for syriainsight.ca + Formspree ID live |
 | 3–4 | First **Sanctions Monitor** longform page (MD or HTML) |
-| 5–7 | Banking & payments + energy sector briefs |
+| 5–7 | Sector briefs live under `site/sectors/` (banking, energy, telecom, real-estate); extend as needed |
 | 8–10 | Official Resources hub page |
 | 11–14 | Astro scaffold + MDX content collection; Preview still = staging |
 
