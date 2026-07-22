@@ -26,6 +26,7 @@ jobs:
           test -f public/privacy.html
           test -f public/references.html
           test -f public/changelog.html
+          test -f public/faq.html
           test -f public/sectors.html
           test -f public/sectors/banking.html
           test -f public/sectors/energy.html
@@ -40,7 +41,7 @@ jobs:
         run: |
           set -e
           # Disclaimer on key public pages
-          for f in index.html sanctions.html tools.html figures.html support.html about.html privacy.html sectors.html references.html changelog.html \
+          for f in index.html sanctions.html faq.html tools.html figures.html support.html about.html privacy.html sectors.html references.html changelog.html \
             sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html; do
             grep -q "Not legal advice" "public/$f"
           done
@@ -87,8 +88,13 @@ jobs:
             echo "FAIL: developer Formspree instruction found in public support page"
             exit 1
           fi
-          # Primary source anchors still present on sanctions / figures
+          # Primary source anchors still present on sanctions / figures / FAQ
           grep -q "international.gc.ca" public/sanctions.html
           grep -q "laws.justice.gc.ca" public/sanctions.html
           grep -q "canada.ca/en/global-affairs" public/figures.html
+          grep -q "international.gc.ca" public/faq.html
+          grep -q "laws.justice.gc.ca" public/faq.html
+          grep -q "gazette.gc.ca" public/faq.html
+          grep -q "Not legal advice" public/faq.html
+          grep -q 'href="/faq.html"' public/index.html
           echo "Pre-push gate smoke checks passed"

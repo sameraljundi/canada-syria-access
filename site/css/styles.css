@@ -333,6 +333,37 @@ textarea { min-height: 120px; resize: vertical; }
 .callout.ok { border-left-color: var(--ok); background: color-mix(in srgb, var(--ok) 12%, var(--surface)); }
 .callout.risk { border-left-color: var(--risk); background: color-mix(in srgb, var(--risk) 12%, var(--surface)); }
 
+.faq-item {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 14px 18px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::before {
+  content: "+";
+  display: inline-block;
+  width: 1.2em;
+  color: var(--muted);
+  font-weight: 700;
+}
+.faq-item[open] summary::before { content: "–"; }
+.faq-item .faq-body {
+  padding: 0 18px 16px 18px;
+  border-top: 1px solid var(--line);
+}
+.faq-item .faq-body > p:first-child { margin-top: 14px; }
+.faq-item .sources-inline { margin-top: 10px; }
+
 .result-box {
   margin-top: 16px;
   padding: 16px;

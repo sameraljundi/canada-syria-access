@@ -6,6 +6,12 @@ Required by the [Pre-push review gate](PRE_PUSH_GATE.md).
 
 ---
 
+## 2026-07-22 — Canadians doing business with Syria FAQ
+
+- **Pages:** `site/faq.html` (new); nav/footer on public pages; `site/index.html` (Start here); `site/css/styles.css` (FAQ accordion); `.github/workflows/build.yml`
+- **Summary:** Published 25-question FAQ from the gated draft: SEMA in-force vs announce dates, Schedule 1 / delistings, trade/services, investment caveats, lawful ≠ bankable, cross-border analysis labels, NGO vs commercial, compliance checklist. Primary GoC cites; no clearance language; list counts as announced Feb 2026.
+- **Sources:** GAC Syria sanctions page; SOR/2011-114; Canada Gazette SOR/2026-23 (also added to `site/references.html`); Feb 2026 GAC news release and backgrounder; GAC sanctions guidance.
+
 ## 2026-07-19 — Tools/Support economic sector field + public changelog
 
 - **Pages:** `site/tools.html`, `site/support.html`, `site/js/site.js`, `site/changelog.html`, `site/about.html`, `site/references.html`
