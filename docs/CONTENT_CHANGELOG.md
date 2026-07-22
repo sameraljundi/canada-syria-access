@@ -6,6 +6,12 @@ Required by the [Pre-push review gate](PRE_PUSH_GATE.md).
 
 ---
 
+## 2026-07-22 — Canadian investment lens under Sectors
+
+- **Pages:** `site/sectors/investment.html` (new); `site/sectors.html` (hub featured link); `site/faq.html` (Q13 link); `.github/workflows/build.yml`
+- **Summary:** Ingested the gated Canadian investment-2026 draft as a Sectors subpage (not a fifth market brief): SEMA in-force vs announce dates, Schedule 1 / delistings, lawful ≠ processable, sector cross-links, Syrian local-law market-entry caveats (no tax % / no DTA claim), investor checklist + short FAQ. Secondary Investor Guides paraphrase + attribution only.
+- **Sources:** GAC Syria; SOR/2011-114; Canada Gazette SOR/2026-23; Feb 2026 GAC news release and backgrounder; GAC sanctions guidance; secondary *Doing Business in Syria* (attribution via References).
+
 ## 2026-07-22 — Canadians doing business with Syria FAQ
 
 - **Pages:** `site/faq.html` (new); nav/footer on public pages; `site/index.html` (Start here); `site/css/styles.css` (FAQ accordion); `.github/workflows/build.yml`

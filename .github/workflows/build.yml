@@ -32,6 +32,7 @@ jobs:
           test -f public/sectors/energy.html
           test -f public/sectors/telecom.html
           test -f public/sectors/real-estate.html
+          test -f public/sectors/investment.html
           test -f public/404.html
           grep -q "SyriaInsight" public/index.html
           grep -q "Not legal advice" public/index.html
@@ -42,7 +43,7 @@ jobs:
           set -e
           # Disclaimer on key public pages
           for f in index.html sanctions.html faq.html tools.html figures.html support.html about.html privacy.html sectors.html references.html changelog.html \
-            sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html; do
+            sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html sectors/investment.html; do
             grep -q "Not legal advice" "public/$f"
           done
           # NPO / charity posture
@@ -73,12 +74,20 @@ jobs:
           grep -q 'href="/sectors/energy.html"' public/sectors.html
           grep -q 'href="/sectors/telecom.html"' public/sectors.html
           grep -q 'href="/sectors/real-estate.html"' public/sectors.html
+          grep -q 'href="/sectors/investment.html"' public/sectors.html
           # Sector pages: Canada primary + secondary attribution; no PDF hosting
           for f in sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html; do
             grep -q "international.gc.ca" "public/$f"
             grep -q "Doing Business in Syria" "public/$f"
             grep -q "Not legal advice" "public/$f"
           done
+          # Investment lens: GoC primaries + secondary attribution; analysis labelled
+          grep -q "international.gc.ca" public/sectors/investment.html
+          grep -q "laws.justice.gc.ca" public/sectors/investment.html
+          grep -q "gazette.gc.ca" public/sectors/investment.html
+          grep -q "Doing Business in Syria" public/sectors/investment.html
+          grep -q "Operational analysis" public/sectors/investment.html
+          grep -q 'href="/sectors/investment.html"' public/faq.html
           if find public -iname '*.pdf' | grep -q .; then
             echo "FAIL: PDF found under public/ — Investor Guides must not be republished on the site"
             exit 1
