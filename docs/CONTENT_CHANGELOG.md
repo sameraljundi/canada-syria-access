@@ -6,6 +6,12 @@ Required by the [Pre-push review gate](PRE_PUSH_GATE.md).
 
 ---
 
+## 2026-07-22 — Contribution ranking (research-report ingest)
+
+- **Pages:** `site/sectors/contribution.html` (new); `site/sectors.html` (hub); `site/sectors/energy.html`, `telecom.html`, `real-estate.html` (dossier enrichment); `site/references.html`; `.github/workflows/build.yml`
+- **Summary:** Published ranked “where Canadians may contribute” research (method A1–A5 + skeptic, top 7, dropped-claim callout) from the gated research report; deepened energy (WB/StatCan power-first), telecom (SOR telecom-monitoring repeal + delist caveat), and real-estate/construction (WB residential/non-res); agri/WASH/compliance briefs deferred.
+- **Sources:** World Bank ($216B; SEEP $146M); StatCan ECT; FAO GIEWS; GAC / SOR/2026-23; Cassels and Reuters labelled secondary.
+
 ## 2026-07-22 — Canadian investment lens under Sectors
 
 - **Pages:** `site/sectors/investment.html` (new); `site/sectors.html` (hub featured link); `site/faq.html` (Q13 link); `.github/workflows/build.yml`

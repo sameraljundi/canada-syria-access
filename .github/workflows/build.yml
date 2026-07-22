@@ -33,6 +33,7 @@ jobs:
           test -f public/sectors/telecom.html
           test -f public/sectors/real-estate.html
           test -f public/sectors/investment.html
+          test -f public/sectors/contribution.html
           test -f public/404.html
           grep -q "SyriaInsight" public/index.html
           grep -q "Not legal advice" public/index.html
@@ -43,7 +44,7 @@ jobs:
           set -e
           # Disclaimer on key public pages
           for f in index.html sanctions.html faq.html tools.html figures.html support.html about.html privacy.html sectors.html references.html changelog.html \
-            sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html sectors/investment.html; do
+            sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html sectors/investment.html sectors/contribution.html; do
             grep -q "Not legal advice" "public/$f"
           done
           # NPO / charity posture
@@ -75,6 +76,7 @@ jobs:
           grep -q 'href="/sectors/telecom.html"' public/sectors.html
           grep -q 'href="/sectors/real-estate.html"' public/sectors.html
           grep -q 'href="/sectors/investment.html"' public/sectors.html
+          grep -q 'href="/sectors/contribution.html"' public/sectors.html
           # Sector pages: Canada primary + secondary attribution; no PDF hosting
           for f in sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html; do
             grep -q "international.gc.ca" "public/$f"
@@ -88,6 +90,16 @@ jobs:
           grep -q "Doing Business in Syria" public/sectors/investment.html
           grep -q "Operational analysis" public/sectors/investment.html
           grep -q 'href="/sectors/investment.html"' public/faq.html
+          # Contribution ranking: method + WB + GoC; no clearance language
+          grep -q "worldbank.org" public/sectors/contribution.html
+          grep -q "international.gc.ca" public/sectors/contribution.html
+          grep -q "Research ranking only" public/sectors/contribution.html
+          grep -q "statcan.gc.ca" public/sectors/contribution.html
+          grep -q "fao.org" public/sectors/contribution.html
+          grep -q "worldbank.org" public/sectors/energy.html
+          grep -q "gazette.gc.ca" public/sectors/telecom.html
+          grep -q "worldbank.org" public/sectors/real-estate.html
+          grep -q "id=\"secondary-institutional\"" public/references.html
           if find public -iname '*.pdf' | grep -q .; then
             echo "FAIL: PDF found under public/ — Investor Guides must not be republished on the site"
             exit 1
