@@ -36,6 +36,7 @@ jobs:
           test -f public/sectors/contribution.html
           test -f public/sectors/compliance.html
           test -f public/sectors/aml-cft-kyc.html
+          test -f public/sectors/mega-projects.html
           test -f public/sectors/agri-food.html
           test -f public/sectors/wash.html
           test -f public/404.html
@@ -50,7 +51,7 @@ jobs:
           # Disclaimer on key public pages
           for f in index.html sanctions.html faq.html tools.html figures.html support.html about.html privacy.html sectors.html references.html changelog.html \
             sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html sectors/investment.html sectors/contribution.html \
-            sectors/compliance.html sectors/aml-cft-kyc.html sectors/agri-food.html sectors/wash.html; do
+            sectors/compliance.html sectors/aml-cft-kyc.html sectors/mega-projects.html sectors/agri-food.html sectors/wash.html; do
             grep -q "Not legal advice" "public/$f"
           done
           # NPO / charity posture
@@ -80,6 +81,8 @@ jobs:
           grep -q 'value="compliance"' public/tools.html
           grep -q 'value="aml-cft-kyc"' public/tools.html
           grep -q 'value="aml-cft-kyc"' public/support.html
+          grep -q 'value="mega-projects"' public/tools.html
+          grep -q 'value="mega-projects"' public/support.html
           grep -q 'value="agri-food"' public/support.html
           grep -q 'value="wash"' public/tools.html
           grep -q 'value="investor"' public/support.html
@@ -92,6 +95,7 @@ jobs:
           grep -q 'href="/sectors/contribution.html"' public/sectors.html
           grep -q 'href="/sectors/compliance.html"' public/sectors.html
           grep -q 'href="/sectors/aml-cft-kyc.html"' public/sectors.html
+          grep -q 'href="/sectors/mega-projects.html"' public/sectors.html
           grep -q 'href="/sectors/agri-food.html"' public/sectors.html
           grep -q 'href="/sectors/wash.html"' public/sectors.html
           # Sector pages: Canada primary + secondary attribution; no PDF hosting
@@ -142,6 +146,17 @@ jobs:
           grep -q 'href="/sectors/aml-cft-kyc.html"' public/faq.html
           grep -q 'href="/sectors/aml-cft-kyc.html"' public/sectors/banking.html
           grep -q 'id="aml-cft-kyc"' public/references.html
+          # Mega-projects brief (Investor Guide attribution required for sector-context block only)
+          grep -q "dpworld.com" public/sectors/mega-projects.html
+          grep -qE "adportsgroup.com|cmacgm" public/sectors/mega-projects.html
+          grep -q "sana.sy" public/sectors/mega-projects.html
+          grep -q "Not legal advice" public/sectors/mega-projects.html
+          grep -qE "ops|tender|MoU" public/sectors/mega-projects.html
+          grep -q "Doing Business in Syria" public/sectors/mega-projects.html
+          grep -q 'href="/sectors/mega-projects.html"' public/sectors.html
+          grep -q 'href="/sectors/mega-projects.html"' public/faq.html
+          grep -q 'href="/sectors/mega-projects.html"' public/sectors/contribution.html
+          grep -q 'id="mega-projects"' public/references.html
           # Compliance audit fixes (2026-07-23)
           if grep -Riq 'next sprint' public --include='*.html'; then
             echo "FAIL: developer 'next sprint' note found in public HTML"
@@ -172,7 +187,7 @@ jobs:
           grep -q "outside Canada" public/privacy.html
           for f in index.html sanctions.html faq.html tools.html figures.html support.html about.html privacy.html sectors.html references.html changelog.html \
             sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html sectors/investment.html sectors/contribution.html \
-            sectors/compliance.html sectors/aml-cft-kyc.html sectors/agri-food.html sectors/wash.html; do
+            sectors/compliance.html sectors/aml-cft-kyc.html sectors/mega-projects.html sectors/agri-food.html sectors/wash.html; do
             grep -q 'href="/changelog.html"' "public/$f"
             grep -qi "not currently a CRA-registered charity" "public/$f"
             grep -q "Screening assistant" "public/$f"

@@ -64,6 +64,7 @@
         "real-estate": { href: "/sectors/real-estate.html", label: "Real estate & construction brief" },
         compliance: { href: "/sectors/compliance.html", label: "Compliance tooling brief" },
         "aml-cft-kyc": { href: "/sectors/aml-cft-kyc.html", label: "AML / CFT / KYC brief" },
+        "mega-projects": { href: "/sectors/mega-projects.html", label: "Mega-projects & bids brief" },
         "agri-food": { href: "/sectors/agri-food.html", label: "Agri-food brief" },
         wash: { href: "/sectors/wash.html", label: "WASH brief" },
         humanitarian: { href: "/support.html", label: "Support intake (humanitarian / early recovery)" },
