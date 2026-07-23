@@ -41,7 +41,8 @@ jobs:
           test -f public/404.html
           grep -q "SyriaInsight" public/index.html
           grep -q "Not legal advice" public/index.html
-          grep -q "Not a CRA-registered charity" public/about.html
+          grep -qi "not currently a CRA-registered charity" public/about.html
+          grep -qi "not currently a CRA-registered charity" public/index.html
           grep -q "PIPEDA" public/privacy.html
       - name: Pre-push gate — compliance smoke checks
         run: |
@@ -53,8 +54,10 @@ jobs:
             grep -q "Not legal advice" "public/$f"
           done
           # NPO / charity posture
-          grep -q "Not a CRA-registered charity" public/about.html
-          grep -q "Not a CRA-registered charity" public/index.html
+          grep -qi "not currently a CRA-registered charity" public/about.html
+          grep -qi "independent research initiative" public/about.html
+          grep -qi "not currently a CRA-registered charity" public/index.html
+          grep -qi "independent research initiative" public/index.html
           # Privacy / OPC
           grep -q "PIPEDA" public/privacy.html
           grep -q "priv.gc.ca" public/privacy.html
@@ -139,13 +142,43 @@ jobs:
           grep -q 'href="/sectors/aml-cft-kyc.html"' public/faq.html
           grep -q 'href="/sectors/aml-cft-kyc.html"' public/sectors/banking.html
           grep -q 'id="aml-cft-kyc"' public/references.html
-          if find public -iname '*.pdf' | grep -q .; then
-            echo "FAIL: PDF found under public/ — Investor Guides must not be republished on the site"
+          # Compliance audit fixes (2026-07-23)
+          if grep -Riq 'next sprint' public --include='*.html'; then
+            echo "FAIL: developer 'next sprint' note found in public HTML"
             exit 1
           fi
-          # No public developer instruction to replace Formspree ID
+          if grep -Riq 'later sprints' public --include='*.html'; then
+            echo "FAIL: developer 'later sprints' note found in public HTML"
+            exit 1
+          fi
           if grep -Eiq 'Replace.*(YOUR_FORM_ID|Formspree)' public/support.html; then
             echo "FAIL: developer Formspree instruction found in public support page"
+            exit 1
+          fi
+          if grep -R 'Decision assistant' public --include='*.html' | grep -q .; then
+            echo "FAIL: user-facing 'Decision assistant' still present (use Screening assistant)"
+            exit 1
+          fi
+          grep -q "not currently a CRA-registered charity" public/index.html
+          grep -q "independent research initiative" public/index.html
+          grep -q "Use the screening assistant" public/index.html
+          grep -q "Screening assistant" public/tools.html
+          grep -q "OFAC" public/sanctions.html
+          grep -q "OFAC" public/faq.html
+          grep -q "Cross-jurisdiction" public/sanctions.html
+          grep -q "Cross-jurisdiction" public/faq.html
+          grep -q "Formspree" public/privacy.html
+          grep -q "Vercel" public/privacy.html
+          grep -q "outside Canada" public/privacy.html
+          for f in index.html sanctions.html faq.html tools.html figures.html support.html about.html privacy.html sectors.html references.html changelog.html \
+            sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html sectors/investment.html sectors/contribution.html \
+            sectors/compliance.html sectors/aml-cft-kyc.html sectors/agri-food.html sectors/wash.html; do
+            grep -q 'href="/changelog.html"' "public/$f"
+            grep -qi "not currently a CRA-registered charity" "public/$f"
+            grep -q "Screening assistant" "public/$f"
+          done
+          if find public -iname '*.pdf' | grep -q .; then
+            echo "FAIL: PDF found under public/ — Investor Guides must not be republished on the site"
             exit 1
           fi
           # Primary source anchors still present on sanctions / figures / FAQ

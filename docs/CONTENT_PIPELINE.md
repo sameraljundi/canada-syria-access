@@ -45,11 +45,12 @@ Official sources → AI draft summary → Human review → Commit → Preview �
 1. Migrate evergreen pages to **Astro + MDX** so monitor issues are files under `content/monitors/`.
 2. Add a GitHub Action (cron) that fetches GAC Syria page text, diffs against last snapshot, and opens a draft PR with an AI-generated change note.
 3. **Required:** reviewer must approve; Action must not push to `main`.
+4. **Future:** scheduled primary-citation link-rot job (HTTP `200` checks for GAC / Justice Laws / Canada Gazette URLs cited on the site) — see [`MONITORING_CHECKLIST.md`](MONITORING_CHECKLIST.md). Not required for this release.
 
 ### Guardrails
 
 - Every material claim links to GAC / Justice Laws / Canada Gazette when it is a legal fact.
-- Decision assistant stays rule-based; no generative “you may proceed” answers in production without counsel.
+- Screening assistant stays rule-based; no generative “you may proceed” answers in production without counsel.
 - Intake PII stays out of git; Formspree/email only.
 - Sector briefs: Canadian sources first; paraphrase State-funded Investor Guides only — see [`SOURCE_LICENSING.md`](SOURCE_LICENSING.md). Never publish guide PDFs under `site/` / `public/`.
 

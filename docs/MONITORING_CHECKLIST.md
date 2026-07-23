@@ -35,3 +35,7 @@ Use this before merging sanctions or figures changes to **production** (`main`).
 ## Rule
 
 **No auto-merge to production for sanctions content.** AI drafts are allowed; human review is mandatory.
+
+## Future — primary URL link-rot monitoring
+
+Not implemented yet. When added, prefer a scheduled Action that HEAD/GETs primary GoC citation URLs (GAC Syria, SOR/2011-114, Canada Gazette notices, FINTRAC advisories linked from the site) and opens a draft PR or issue on non-`200` responses. Until then, spot-check primary links during the Immediate and Weekly passes above.

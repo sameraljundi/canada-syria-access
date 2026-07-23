@@ -19,7 +19,7 @@
     applyTheme();
   });
 
-  // Decision assistant
+  // Screening assistant (form IDs kept for stability)
   const form = document.getElementById("decisionForm");
   if (form) {
     form.addEventListener("submit", (e) => {

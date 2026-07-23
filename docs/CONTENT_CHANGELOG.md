@@ -6,6 +6,12 @@ Required by the [Pre-push review gate](PRE_PUSH_GATE.md).
 
 ---
 
+## 2026-07-23 — Compliance audit fixes
+
+- **Pages:** sitewide footers; `tools.html`; `index.html`; `sanctions.html`; `faq.html`; `privacy.html`; `404.html`; `docs/PRE_PUSH_GATE.md`; `docs/CONTENT_PIPELINE.md`; `docs/MONITORING_CHECKLIST.md`; CI
+- **Summary:** Removed developer “next sprint” note; definitive NPO footer (independent research / not currently CRA charity); Changelog on all footers; renamed Decision→Screening assistant; OFAC/foreign-regime callouts on Sanctions and FAQ; Privacy Formspree/Vercel + cross-border disclosure; gate checklist hardened.
+- **Sources:** GAC Essential information (cross-jurisdiction principle); existing GoC baseline unchanged.
+
 ## 2026-07-22 — AML / CFT / KYC decision brief
 
 - **Pages:** `site/sectors/aml-cft-kyc.html` (new); hub featured + grid; banking / compliance / FAQ Q16–Q23 / investment / contribution cross-links; Tools/Support `aml-cft-kyc` option + `site.js`; References (FINTRAC, PCMLTFA, FATF, GAC FAQ); CI
