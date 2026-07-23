@@ -6,6 +6,12 @@ Required by the [Pre-push review gate](PRE_PUSH_GATE.md).
 
 ---
 
+## 2026-07-22 — Sectors PR2: compliance, agri-food, WASH briefs
+
+- **Pages:** `site/sectors/compliance.html`, `agri-food.html`, `wash.html` (new); hub + contribution links; banking cross-link; Tools/Support sector options + `site.js`; References (StatCan 16-511); CI
+- **Summary:** Closed contribution-ranking gaps #3/#5/#7 with dedicated Canadian-first briefs; SWIFT-reconnect kill on compliance; FAO + chemicals diligence on agri-food; WB WASH demand class on wash; logistics remains unranked.
+- **Sources:** GAC / SOR; FAO GIEWS; World Bank reconstruction release; StatCan ECT Daily + cleantech taxonomy; Cassels secondary on compliance only.
+
 ## 2026-07-22 — Contribution ranking (research-report ingest)
 
 - **Pages:** `site/sectors/contribution.html` (new); `site/sectors.html` (hub); `site/sectors/energy.html`, `telecom.html`, `real-estate.html` (dossier enrichment); `site/references.html`; `.github/workflows/build.yml`

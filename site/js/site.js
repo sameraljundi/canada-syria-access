@@ -61,7 +61,10 @@
         banking: { href: "/sectors/banking.html", label: "Banking & payments brief" },
         energy: { href: "/sectors/energy.html", label: "Energy brief" },
         telecom: { href: "/sectors/telecom.html", label: "Telecom & technology brief" },
-        "real-estate": { href: "/sectors/real-estate.html", label: "Real estate brief" },
+        "real-estate": { href: "/sectors/real-estate.html", label: "Real estate & construction brief" },
+        compliance: { href: "/sectors/compliance.html", label: "Compliance tooling brief" },
+        "agri-food": { href: "/sectors/agri-food.html", label: "Agri-food brief" },
+        wash: { href: "/sectors/wash.html", label: "WASH brief" },
         humanitarian: { href: "/support.html", label: "Support intake (humanitarian / early recovery)" },
         "cross-cutting": { href: "/sectors.html", label: "Sectors overview" },
       };

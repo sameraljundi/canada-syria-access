@@ -34,6 +34,9 @@ jobs:
           test -f public/sectors/real-estate.html
           test -f public/sectors/investment.html
           test -f public/sectors/contribution.html
+          test -f public/sectors/compliance.html
+          test -f public/sectors/agri-food.html
+          test -f public/sectors/wash.html
           test -f public/404.html
           grep -q "SyriaInsight" public/index.html
           grep -q "Not legal advice" public/index.html
@@ -44,7 +47,8 @@ jobs:
           set -e
           # Disclaimer on key public pages
           for f in index.html sanctions.html faq.html tools.html figures.html support.html about.html privacy.html sectors.html references.html changelog.html \
-            sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html sectors/investment.html sectors/contribution.html; do
+            sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html sectors/investment.html sectors/contribution.html \
+            sectors/compliance.html sectors/agri-food.html sectors/wash.html; do
             grep -q "Not legal advice" "public/$f"
           done
           # NPO / charity posture
@@ -69,6 +73,9 @@ jobs:
           grep -q 'name="sector"' public/support.html
           grep -q 'value="energy"' public/tools.html
           grep -q 'value="real-estate"' public/support.html
+          grep -q 'value="compliance"' public/tools.html
+          grep -q 'value="agri-food"' public/support.html
+          grep -q 'value="wash"' public/tools.html
           grep -q 'value="investor"' public/support.html
           # Sector hub links to briefs
           grep -q 'href="/sectors/banking.html"' public/sectors.html
@@ -77,6 +84,9 @@ jobs:
           grep -q 'href="/sectors/real-estate.html"' public/sectors.html
           grep -q 'href="/sectors/investment.html"' public/sectors.html
           grep -q 'href="/sectors/contribution.html"' public/sectors.html
+          grep -q 'href="/sectors/compliance.html"' public/sectors.html
+          grep -q 'href="/sectors/agri-food.html"' public/sectors.html
+          grep -q 'href="/sectors/wash.html"' public/sectors.html
           # Sector pages: Canada primary + secondary attribution; no PDF hosting
           for f in sectors/banking.html sectors/energy.html sectors/telecom.html sectors/real-estate.html; do
             grep -q "international.gc.ca" "public/$f"
@@ -100,6 +110,20 @@ jobs:
           grep -q "gazette.gc.ca" public/sectors/telecom.html
           grep -q "worldbank.org" public/sectors/real-estate.html
           grep -q "id=\"secondary-institutional\"" public/references.html
+          # PR2 gap briefs (no Investor Guide requirement)
+          grep -q "international.gc.ca" public/sectors/compliance.html
+          grep -q "Not clearance software" public/sectors/compliance.html
+          grep -q "SWIFT" public/sectors/compliance.html
+          grep -q 'href="/sectors/compliance.html"' public/sectors/banking.html
+          grep -q "fao.org" public/sectors/agri-food.html
+          grep -q "chemical" public/sectors/agri-food.html
+          grep -q "international.gc.ca" public/sectors/agri-food.html
+          grep -q "worldbank.org" public/sectors/wash.html
+          grep -q "international.gc.ca" public/sectors/wash.html
+          grep -q "16-511" public/references.html
+          grep -q 'href="/sectors/compliance.html"' public/sectors/contribution.html
+          grep -q 'href="/sectors/agri-food.html"' public/sectors/contribution.html
+          grep -q 'href="/sectors/wash.html"' public/sectors/contribution.html
           if find public -iname '*.pdf' | grep -q .; then
             echo "FAIL: PDF found under public/ — Investor Guides must not be republished on the site"
             exit 1
