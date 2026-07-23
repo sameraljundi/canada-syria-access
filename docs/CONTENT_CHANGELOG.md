@@ -6,6 +6,12 @@ Required by the [Pre-push review gate](PRE_PUSH_GATE.md).
 
 ---
 
+## 2026-07-23 — Mega-projects & bids research brief
+
+- **Pages:** `site/sectors/mega-projects.html` (new); Sectors hub featured card; banking / energy / telecom / real-estate / contribution / investment / FAQ cross-links; Tools/Support `mega-projects` option + `site.js`; References `#mega-projects`; CI
+- **Summary:** Ingested skeptic-tested mega-projects ranking (ops / CapEx / concession / tender / MoU stages). Investor Guides used only for short Canadian-facing sector-context paraphrase — not as deal evidence. Dropped Aug 2025 $14bn MoU ceremony, Starlink, TAV≠energy, WB $216bn-as-deal.
+- **Sources:** DP World; AD Ports / CMA; SANA; Tadawul (stc SilkLink); Reuters power; AP pipeline; White & Case airport; WINEP / Forbes / ARI secondary; WB $216bn cost frame; *Doing Business in Syria* paraphrase attribution only.
+
 ## 2026-07-23 — Compliance audit fixes
 
 - **Pages:** sitewide footers; `tools.html`; `index.html`; `sanctions.html`; `faq.html`; `privacy.html`; `404.html`; `docs/PRE_PUSH_GATE.md`; `docs/CONTENT_PIPELINE.md`; `docs/MONITORING_CHECKLIST.md`; CI
