@@ -6,6 +6,12 @@ Required by the [Pre-push review gate](PRE_PUSH_GATE.md).
 
 ---
 
+## 2026-07-22 — AML / CFT / KYC decision brief
+
+- **Pages:** `site/sectors/aml-cft-kyc.html` (new); hub featured + grid; banking / compliance / FAQ Q16–Q23 / investment / contribution cross-links; Tools/Support `aml-cft-kyc` option + `site.js`; References (FINTRAC, PCMLTFA, FATF, GAC FAQ); CI
+- **Summary:** Ingested gated AML/CFT/KYC research as a Canadian-first obligations & friction brief (three-track SEMA ≠ AML ≠ CFT; GAC FAQ bankability; CFT residual; FATF grey list + FINTRAC advisory; KYC/BO ≥25%; practical checklist). Distinct from RegTech `compliance.html`.
+- **Sources:** GAC FAQ / Essential information / terrorists; SOR/2026-23; PCMLTFA / PCMLTFR; Criminal Code s. 83.03; FINTRAC guidance + 15 Jul 2026 advisory; FATF increased monitoring 19 Jun 2026; EU/UK foreign overlay; Cassels secondary.
+
 ## 2026-07-22 — Sectors PR2: compliance, agri-food, WASH briefs
 
 - **Pages:** `site/sectors/compliance.html`, `agri-food.html`, `wash.html` (new); hub + contribution links; banking cross-link; Tools/Support sector options + `site.js`; References (StatCan 16-511); CI
