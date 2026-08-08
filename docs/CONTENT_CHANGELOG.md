@@ -6,6 +6,12 @@ Required by the [Pre-push review gate](PRE_PUSH_GATE.md).
 
 ---
 
+## 2026-08-08 — Homepage economic-access refresh
+
+- **Pages:** `site/index.html`; `site/css/styles.css` (hero title width); changelog; CI
+- **Summary:** Reframed Home as economic-access research hub (not sanctions dashboard): new hero, removed Schedule 1 KPIs from first viewport, added Research you can use (contribution, mega-projects, sectors, WB IDA, AML, investment), reordered Start here, legal baseline below fold.
+- **Sources:** Existing GoC announcement links retained in legal baseline; no new legal claims.
+
 ## 2026-08-08 — WB Financial Sector Modernization $100M (Figures)
 
 - **Pages:** `site/figures.html` (`#wb-ida` fifth row); `site/sectors/banking.html`; `site/references.html`; draft `drafts/syria-wb-ida-engagement-2026-08.md`; CI
