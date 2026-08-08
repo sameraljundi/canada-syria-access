@@ -154,6 +154,7 @@ h1 {
   margin: 10px 0 14px;
   max-width: 16ch;
 }
+.hero > h1 { max-width: 20ch; }
 .page-hero h1 { max-width: 22ch; }
 h2 {
   font-family: var(--font-display);

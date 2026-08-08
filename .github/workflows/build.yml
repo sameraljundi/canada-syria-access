@@ -190,6 +190,11 @@ jobs:
           grep -q "not currently a CRA-registered charity" public/index.html
           grep -q "independent research initiative" public/index.html
           grep -q "Use the screening assistant" public/index.html
+          grep -q "Explore sectors" public/index.html
+          grep -q 'href="/sectors.html"' public/index.html
+          grep -q 'href="/sectors/contribution.html"' public/index.html
+          grep -q 'href="/sectors/mega-projects.html"' public/index.html
+          grep -q "economic access" public/index.html
           grep -q "Screening assistant" public/tools.html
           grep -q "OFAC" public/sanctions.html
           grep -q "OFAC" public/faq.html
