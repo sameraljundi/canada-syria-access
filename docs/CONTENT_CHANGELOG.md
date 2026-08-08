@@ -6,10 +6,16 @@ Required by the [Pre-push review gate](PRE_PUSH_GATE.md).
 
 ---
 
+## 2026-08-08 — WB Financial Sector Modernization $100M (Figures)
+
+- **Pages:** `site/figures.html` (`#wb-ida` fifth row); `site/sectors/banking.html`; `site/references.html`; draft `drafts/syria-wb-ida-engagement-2026-08.md`; CI
+- **Summary:** Promoted Syria Financial Sector Modernization Project (US$100M IDA; Board 6 Aug / PR 7 Aug 2026) from pipeline to confirmed. Syrian-side financing framing; not SWIFT reconnect; not Canadian bank clearance. Railway remains pipeline. Listed-grant arithmetic sum US$491M.
+- **Sources:** [WB 7 Aug 2026](https://www.worldbank.org/en/news/press-release/2026/08/07/syria-world-bank-approves-us-100-million-grant-for-financial-sector-modernization).
+
 ## 2026-08-08 — World Bank IDA grants on Figures
 
 - **Pages:** `site/figures.html` (`#wb-ida`); `site/sectors/wash.html`; `site/sectors/contribution.html` (power/WASH notes); `site/sectors/banking.html` (Figures cross-link); `site/references.html` (`#wb-ida`); draft `drafts/syria-wb-ida-engagement-2026-08.md`; CI
-- **Summary:** Criteria-gated table of Board-approved IDA grants (electricity $146M; PFM $20M; water $150M; health $75M). Arrears/eligibility + $216bn cost-frame hygiene. Financial Sector ~$100M and railway held as pipeline pending worldbank.org / Finances One primary.
+- **Summary:** Criteria-gated table of Board-approved IDA grants (electricity $146M; PFM $20M; water $150M; health $75M). Arrears/eligibility + $216bn cost-frame hygiene. Financial Sector ~$100M initially held as pipeline (promoted same day once WB PR published).
 - **Sources:** World Bank press releases (Jun 2025; Mar 2026; Apr 2026); WB Syria country page; Finances One.
 
 ## 2026-07-23 — Mega-projects & bids research brief
