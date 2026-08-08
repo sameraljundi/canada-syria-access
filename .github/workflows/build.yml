@@ -162,9 +162,13 @@ jobs:
           grep -q "worldbank.org" public/figures.html
           grep -q "US\$146M" public/figures.html
           grep -q "US\$150M" public/figures.html
+          grep -q "US\$100M" public/figures.html
+          grep -q "financial-sector-modernization" public/figures.html
           grep -q "Cost frame" public/figures.html
           grep -q 'id="wb-ida"' public/references.html
+          grep -q "financial-sector-modernization" public/references.html
           grep -q "US\$150M" public/sectors/wash.html
+          grep -q "financial-sector-modernization" public/sectors/banking.html
           grep -q 'href="/figures.html#wb-ida"' public/sectors/contribution.html
           # Compliance audit fixes (2026-07-23)
           if grep -Riq 'next sprint' public --include='*.html'; then
