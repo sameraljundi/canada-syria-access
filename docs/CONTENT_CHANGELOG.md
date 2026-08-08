@@ -6,6 +6,12 @@ Required by the [Pre-push review gate](PRE_PUSH_GATE.md).
 
 ---
 
+## 2026-08-08 — World Bank IDA grants on Figures
+
+- **Pages:** `site/figures.html` (`#wb-ida`); `site/sectors/wash.html`; `site/sectors/contribution.html` (power/WASH notes); `site/sectors/banking.html` (Figures cross-link); `site/references.html` (`#wb-ida`); draft `drafts/syria-wb-ida-engagement-2026-08.md`; CI
+- **Summary:** Criteria-gated table of Board-approved IDA grants (electricity $146M; PFM $20M; water $150M; health $75M). Arrears/eligibility + $216bn cost-frame hygiene. Financial Sector ~$100M and railway held as pipeline pending worldbank.org / Finances One primary.
+- **Sources:** World Bank press releases (Jun 2025; Mar 2026; Apr 2026); WB Syria country page; Finances One.
+
 ## 2026-07-23 — Mega-projects & bids research brief
 
 - **Pages:** `site/sectors/mega-projects.html` (new); Sectors hub featured card; banking / energy / telecom / real-estate / contribution / investment / FAQ cross-links; Tools/Support `mega-projects` option + `site.js`; References `#mega-projects`; CI

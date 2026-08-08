@@ -157,6 +157,15 @@ jobs:
           grep -q 'href="/sectors/mega-projects.html"' public/faq.html
           grep -q 'href="/sectors/mega-projects.html"' public/sectors/contribution.html
           grep -q 'id="mega-projects"' public/references.html
+          # World Bank IDA grants on Figures (2026-08-08)
+          grep -q 'id="wb-ida"' public/figures.html
+          grep -q "worldbank.org" public/figures.html
+          grep -q "US\$146M" public/figures.html
+          grep -q "US\$150M" public/figures.html
+          grep -q "Cost frame" public/figures.html
+          grep -q 'id="wb-ida"' public/references.html
+          grep -q "US\$150M" public/sectors/wash.html
+          grep -q 'href="/figures.html#wb-ida"' public/sectors/contribution.html
           # Compliance audit fixes (2026-07-23)
           if grep -Riq 'next sprint' public --include='*.html'; then
             echo "FAIL: developer 'next sprint' note found in public HTML"
