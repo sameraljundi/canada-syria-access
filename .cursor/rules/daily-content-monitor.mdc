@@ -1,0 +1,13 @@
+---
+description: Daily or morning source-update check and content planning from official Syria/Canada sources.
+alwaysApply: false
+---
+
+# Daily content monitor
+
+When the user asks for a **daily update**, **morning briefing**, “any new Syria/Canada content?”, or source-driven **content planning**:
+
+1. Follow the project skill [`.cursor/skills/daily-content-monitor/SKILL.md`](.cursor/skills/daily-content-monitor/SKILL.md).
+2. Use [`docs/MONITORING_CHECKLIST.md`](docs/MONITORING_CHECKLIST.md) as the source list (Daily / Immediate minimum).
+3. Produce a **content plan** (must / should / draft-only / no change) — do **not** auto-merge sanctions or figures to `main`.
+4. After the user confirms ingest, apply the References-on-content rule in the same PR.

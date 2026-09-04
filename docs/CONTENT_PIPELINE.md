@@ -35,10 +35,12 @@ Official sources → AI draft summary → Human review → Commit → Preview �
 
 ### Now (manual)
 
-1. Weekly pass on the top sources in the monitoring checklist / [`monitoring.csv`](../monitoring.csv).
-2. Paste notes into PR description with source URLs.
-3. Update HTML pages; never invent list counts.
-4. Record material content changes in [`CONTENT_CHANGELOG.md`](CONTENT_CHANGELOG.md) and mirror on [`site/changelog.html`](../site/changelog.html) (log of record).
+1. **Daily** (or on request): run the Cursor skill [`.cursor/skills/daily-content-monitor/SKILL.md`](../.cursor/skills/daily-content-monitor/SKILL.md) against [`MONITORING_CHECKLIST.md`](MONITORING_CHECKLIST.md) → content plan before editing.
+2. Weekly pass on the top sources in the monitoring checklist / [`monitoring.csv`](../monitoring.csv).
+3. Paste notes into PR description with source URLs.
+4. Update HTML pages; never invent list counts.
+5. **New on-page sources → update [`site/references.html`](../site/references.html) in the same PR** (see `.cursor/rules/update-references-on-content.mdc`).
+6. Record material content changes in [`CONTENT_CHANGELOG.md`](CONTENT_CHANGELOG.md) and mirror on [`site/changelog.html`](../site/changelog.html) (log of record).
 
 ### Next (Week 1–2)
 

@@ -46,7 +46,7 @@ flowchart TD
 - [ ] Every material legal or KPI claim links to a **primary** Government of Canada source (GAC, Justice Laws, Canada Gazette / Canada.ca announcement)
 - [ ] Operational analysis (for example “bankability”, cross-jurisdiction friction) is labelled as analysis, not statute
 - [ ] List counts state **as-of announcement date**; do not invent live totals
-- [ ] New sources added to [`site/references.html`](../site/references.html)
+- [ ] New sources added to [`site/references.html`](../site/references.html) **in the same PR as the content** (do not defer)
 - [ ] If `sanctions.html` or `figures.html` changed: run [`MONITORING_CHECKLIST.md`](MONITORING_CHECKLIST.md)
 - [ ] **Screening assistant** still rule-based; no generative “you may proceed” as legal clearance
 - [ ] If LLM/RAG is ever used to draft legal or list content: outputs must be grounded to cited primary text, human-gated before production, and must not invent list entries (no ungrounded generation)
