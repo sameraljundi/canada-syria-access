@@ -1,6 +1,12 @@
-# Monitoring checklist (launch + weekly)
+# Monitoring checklist (daily + launch + weekly)
 
 Use this before merging sanctions or figures changes to **production** (`main`).
+
+For agent-assisted daily passes, follow [`.cursor/skills/daily-content-monitor/SKILL.md`](../.cursor/skills/daily-content-monitor/SKILL.md): check sources → diff live site → **content plan** → human approve → PR. Do not auto-merge.
+
+## Daily
+
+Minimum pass = **Immediate** items below, plus a quick scan of World Bank Syria press / Finances One if figures or mega-projects may have moved. Output: no-change note, or a short content plan (must / should / draft-only).
 
 ## Immediate (same day)
 
