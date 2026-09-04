@@ -6,6 +6,12 @@ Required by the [Pre-push review gate](PRE_PUSH_GATE.md).
 
 ---
 
+## 2026-09-04 — Cross-jurisdiction refresh (US SST + Canada Dec 2025 + AML/WB)
+
+- **Pages:** `site/sanctions.html` (timeline); `site/faq.html` (Q18–Q19); `site/sectors/aml-cft-kyc.html`; `site/sectors/banking.html`; `site/figures.html` (review date only); `site/references.html` (`#foreign-us-sst` + GoC Dec 2025); changelog
+- **Summary:** Documented U.S. State Sponsor of Terrorism rescission (effective 24 Aug 2026) as foreign overlay; strengthened Canada Dec 2025 State Immunity / HTS delisting with Canada.ca primary; cross-linked WB FS IDA AML/FIU capacity without claiming FATF grey-list exit. Lawful ≠ bankable framing unchanged; Schedule 1 as-announced Feb 2026 counts unchanged.
+- **Sources:** [Federal Register SST rescission](https://www.federalregister.gov/documents/2026/08/31/2026-17653/rescission-of-the-state-sponsor-of-terrorism-determination-regarding-syria); [State Jul 2026 process notice](https://www.state.gov/releases/office-of-the-spokesperson/2026/07/initiating-rescission-process-of-syrias-designation-as-a-state-sponsor-of-terrorism); [Canada.ca 5 Dec 2025](https://www.canada.ca/en/global-affairs/news/2025/12/canada-announces-measures-related-to-syria.html); [SOR/2025-251](https://gazette.gc.ca/rp-pr/p2/2025/2025-12-17/html/sor-dors251-eng.html); [WB FS 7 Aug 2026](https://www.worldbank.org/en/news/press-release/2026/08/07/syria-world-bank-approves-us-100-million-grant-for-financial-sector-modernization); FATF increased monitoring 19 Jun 2026 (existing).
+
 ## 2026-08-08 — Homepage economic-access refresh
 
 - **Pages:** `site/index.html`; `site/css/styles.css` (hero title width); changelog; CI
