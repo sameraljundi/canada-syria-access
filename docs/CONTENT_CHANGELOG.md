@@ -6,6 +6,12 @@ Required by the [Pre-push review gate](PRE_PUSH_GATE.md).
 
 ---
 
+## 2026-09-27 — Tartous MHC milestone + daily-monitor review bump
+
+- **Pages:** `site/sectors/mega-projects.html`; `site/references.html` (`#mega-projects`); last-reviewed on sanctions, figures, AML, banking; changelog
+- **Summary:** DP World Tartus CapEx update — company reports three mobile harbour cranes delivered 17 Aug 2026 (after first MHC 1 Jul 2026); ~40% capacity claim labelled company figure. Daily monitor verify: no new GoC SOR package; no new Board-approved IDA row (railway / secondary $50M transport claims remain pipeline / unconfirmed).
+- **Sources:** [DP World, 17 Aug 2026](https://www.dpworld.com/en/news/dp-world-advances-syrias-economic-recovery-through-port-of-tartous-modernisation).
+
 ## 2026-09-04 — Cross-jurisdiction refresh (US SST + Canada Dec 2025 + AML/WB)
 
 - **Pages:** `site/sanctions.html` (timeline); `site/faq.html` (Q18–Q19); `site/sectors/aml-cft-kyc.html`; `site/sectors/banking.html`; `site/figures.html` (review date only); `site/references.html` (`#foreign-us-sst` + GoC Dec 2025); changelog
