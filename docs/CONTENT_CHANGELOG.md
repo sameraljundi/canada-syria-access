@@ -6,6 +6,12 @@ Required by the [Pre-push review gate](PRE_PUSH_GATE.md).
 
 ---
 
+## 2026-11-26 — Per-sector project lists on mega hub
+
+- **Pages:** `site/sectors/mega-projects.html` (`#by-sector`, `#energy`, `#transport`, `#real-estate-projects`, `#telecom-projects`, `#industrial`); embeds on `energy.html`, `real-estate.html`, `telecom.html`; banking institutional note; draft `drafts/syria-sector-project-lists-2026-11.md`; references (Enab Aleppo airport); changelog
+- **Summary:** Kept cross-sector Top 10; added per-sector stage-ranked tables (up to 10, not padded): Energy 4, Transport 6, Real estate 4, Telecom 2, Industrial 2. Banking explicitly not a CapEx Top 10. Same started≠de-risked rules.
+- **Sources:** Existing mega/SIA/WB/company cites; [Enab Aleppo airport](https://english.enabbaladi.net/archives/2026/09/saudi-fund-to-upgrade-aleppo-airport-for-over-2m-passengers/) (secondary).
+
 ## 2026-11-26 — Secondary Syria business intel (Karam Shaar, Enab, Syria Report, OBG)
 
 - **Pages:** `site/sectors/banking.html`; `site/sectors/mega-projects.html`; `site/references.html` (`#secondary-syria-business`); `docs/MONITORING_CHECKLIST.md`; changelog
