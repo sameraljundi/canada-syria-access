@@ -6,6 +6,12 @@ Required by the [Pre-push review gate](PRE_PUSH_GATE.md).
 
 ---
 
+## 2026-11-26 — Secondary Syria business intel (Karam Shaar, Enab, Syria Report, OBG)
+
+- **Pages:** `site/sectors/banking.html`; `site/sectors/mega-projects.html`; `site/references.html` (`#secondary-syria-business`); `docs/MONITORING_CHECKLIST.md`; changelog
+- **Summary:** Expanded monitoring with secondary business-intel tier (Syria Report, OBG, Enab, CIP, Karam Shaar, SBG, MEES; grant aggregators / GIZ as NGO leads only). Banking: private-bank capital-scale cite from Karam Shaar. Mega: UCC power financing colour (Enab); Gulf roads ~US$646M / 1,124 km as Syria Report secondary lead pending ministry corroboration; Arada/Alabbar demoted. No new SOR; no new IDA Board row; no SWIFT clearance claim.
+- **Sources:** [Karam Shaar private banks](https://karamshaar.com/our-work/blog/can-syrias-private-banks-actually-shoulder-the-burden-of-financing-economic-development/); [Enab Baladi JPMorgan/UCC financing](https://english.enabbaladi.net/archives/2026/08/jpmorgans-7-billion-financing-for-syrias-largest-deal/); [Syria Report roads](https://syria-report.com/gulf-firms-secure-usd-646-million-in-contracts-to-rehabilitate-1124-km-of-roads/); [OBG Syria 2026 economy](https://oxfordbusinessgroup.com/reports/syria/2026-report/economy/recovery-foundations-institutional-reform-reconstruction-and-renewed-investment-are-laying-the-groundwork-for-long-term-economic-improvement-overview/); [SBG Business Review](https://syrianbusinessgateway.com/business-review/).
+
 ## 2026-11-26 — Thorough refresh (FATF Oct, WB visit/STARRT, SIA stages)
 
 - **Pages:** `site/sectors/aml-cft-kyc.html`; `site/sectors/banking.html`; `site/figures.html` (`#wb-ida`); `site/sectors/mega-projects.html`; `site/sectors/real-estate.html`; `site/references.html`; `site/sanctions.html` (review date); changelog; `docs/MONITORING_CHECKLIST.md`
