@@ -6,6 +6,12 @@ Required by the [Pre-push review gate](PRE_PUSH_GATE.md).
 
 ---
 
+## 2026-11-26 — Thorough refresh (FATF Oct, WB visit/STARRT, SIA stages)
+
+- **Pages:** `site/sectors/aml-cft-kyc.html`; `site/sectors/banking.html`; `site/figures.html` (`#wb-ida`); `site/sectors/mega-projects.html`; `site/sectors/real-estate.html`; `site/references.html`; `site/sanctions.html` (review date); changelog; `docs/MONITORING_CHECKLIST.md`
+- **Summary:** FATF increased-monitoring cite → 30 Oct 2026 (Syria still grey list); CBS Strategy 2026–2030 AML/KYC/BO pillar + correspondent/SWIFT rebuild as secondary ops colour only (not clearance); WB 18 Nov Damascus visit reconfirms US$491M five IDA grants, STARRT MDTF, CPF prep — no new Board row; STAR agri ~US$175M and railway remain pipeline; EU ~€620M and IsDB/EIB/IFC talks labelled non-IDA financing context; SIA stage notes (Damascus airport visit, Beaumont licence, Al-Olabi / Aleppo pack, Musalmiya cement, Hama 11-project launch) without promoting MoUs as CapEx-complete. No new SOR; Schedule 1 as-announced Feb 2026 unchanged.
+- **Sources:** [FATF increased monitoring 30 Oct 2026](https://www.fatf-gafi.org/en/publications/High-risk-and-other-monitored-jurisdictions/increased-monitoring-october-2026.html); [CBS Strategy 2026–2030 PDF](https://www.cb.gov.sy/downloads/files/1778057803.PDF); [WB 18 Nov 2026](https://www.worldbank.org/en/news/press-release/2026/11/18/world-bank-managing-director-in-damascus-a-long-term-partnership-for-syria-s-recov); [SIA Beaumont](https://invest.gov.sy/Home/GetNews/e5c4dc44-75f6-45bf-9e6e-ca670f0d4a58); [SIA Al-Olabi](https://invest.gov.sy/Home/GetNews/515fd0e1-b8ad-4eae-9fc2-0173e1724da3); [SIA airport visit](https://invest.gov.sy/Home/GetNews/3c65b446-3762-464a-a916-0bd38ab7889c); [SIA news hub](https://invest.gov.sy/Home/News); [MoA STAR prep](https://moaar.gov.sy/article/683075); [EU ~€620M note](https://north-africa-middle-east-gulf.ec.europa.eu/news/eu-opens-new-chapter-its-relations-syria-2026-01-09_en).
+
 ## 2026-09-27 — Tartous MHC milestone + daily-monitor review bump
 
 - **Pages:** `site/sectors/mega-projects.html`; `site/references.html` (`#mega-projects`); last-reviewed on sanctions, figures, AML, banking; changelog
