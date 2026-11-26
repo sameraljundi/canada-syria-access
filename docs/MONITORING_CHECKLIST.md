@@ -10,9 +10,16 @@ Minimum pass = **Immediate** items below, plus a quick scan of World Bank Syria 
 
 **Lead funnel (aggregator → Syrian institutional → GoC/WB primaries):**
 
-1. [news.jard.chat](https://news.jard.chat) — Telegram/ministry lead feed only; **never** sole citation for legal or IDA claims
+1. [news.jard.chat](https://news.jard.chat) / [rebuilding-syria.com](https://www.rebuilding-syria.com) — aggregator lead feeds only; **never** sole citation for legal or IDA claims
 2. [SANA English](https://sana.sy/en/) / [SIA news](https://invest.gov.sy/Home/News) / [CBS](https://www.cb.gov.sy/) / MoF press / [MoA](https://moaar.gov.sy/) — official Syrian colour; stage-label carefully
 3. Promote to site only after verifying against GoC (GAC / SOR / Gazette) or WB / FATF primaries
+
+**Secondary business-intel tier (weekly skim — market colour only):**
+
+- [syria-report.com](https://syria-report.com) · [oxfordbusinessgroup.com](https://oxfordbusinessgroup.com) (Syria 2026) · [english.enabbaladi.net](https://english.enabbaladi.net)
+- [cip.sy](https://cip.sy) · [karamshaar.com](https://karamshaar.com) · [syrianbusinessgateway.com/business-review](https://syrianbusinessgateway.com/business-review/) · [MEES](https://www.mees.com)
+- Grant aggregators ([DevelopmentAid](https://www.developmentaid.org), GrantStation, fundsforNGOs) and [neuanfang-syrien.de](https://www.neuanfang-syrien.de) (GIZ) — NGO/partner-channelled leads only; **not** Figures IDA rows
+- Do **not** promote commitment totals, SIA opportunity counts, or MoU headlines into KPIs without stage discipline
 
 ## Immediate (same day)
 
@@ -31,12 +38,14 @@ Minimum pass = **Immediate** items below, plus a quick scan of World Bank Syria 
 - [ ] World Bank Syria press + [Finances One](https://financesone.worldbank.org/countries/syrian%20arab%20republic) (IDA Board rows / STARRT)
 - [ ] [FATF increased monitoring](https://www.fatf-gafi.org/en/countries/black-and-grey-lists.html) / FINTRAC if AML pages in scope
 - [ ] SIA / CBS / MoF / MoA leads (licence ≠ CapEx; strategy ≠ grey-list exit; talks ≠ Board grants)
+- [ ] Secondary business-intel tier above (Syria Report / OBG / Enab / CIP / Karam Shaar / SBG / MEES) — stage-label; corroborate before publish
 
 ## Monthly
 
 - [ ] World Bank Syria indicators (for future Figures expansion)
 - [ ] Syrian Investment Authority / market portals (context only — label clearly; do not turn opportunity counts into Figures KPIs)
 - [ ] Law-firm cross-jurisdiction notes (secondary — not primary legal claims)
+- [ ] NGO / donor call portals (DevelopmentAid, GIZ Neuanfang) — Support/FAQ path only if Canadian-relevant; never IDA table
 - [ ] Draft or refresh **Canada–Syria Sanctions Monitor** issue
 
 ## Ownership
